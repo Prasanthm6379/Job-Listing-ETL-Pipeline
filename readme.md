@@ -135,13 +135,22 @@ python3 scripts/load_to_csv_spark.py
 ### Input Schema (RemoteOK API)
 ```json
 {
+  "slug": "string",
   "id": "string",
-  "company": "string",
-  "position": "string", 
-  "tags": ["array of skills"],
-  "location": "string",
+  "epoch": "number",
   "date": "timestamp",
-  "apply_url": "string"
+  "company": "string",
+  "company_logo": "string",
+  "tags": [
+    "array of string"
+  ],
+  "logo": "string",
+  "description": "string",
+  "location": "string",
+  "salary_min": "number",
+  "salary_max": "number",
+  "apply_url": "hstring",
+  "url": "string"
 }
 ```
 

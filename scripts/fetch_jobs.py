@@ -7,7 +7,7 @@ try:
     jobs = response.json()
     
     with open('data/raw_jobs.json', 'w') as f:
-        json.dump(jobs[1:], f, indent=4)  # More efficient than dumps + write
+        json.dump(jobs[1:], f, indent=4) 
         print("Raw Jobs Fetched Successfully")
         
 except requests.RequestException as e:
